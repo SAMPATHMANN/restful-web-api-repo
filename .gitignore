@@ -1,0 +1,4 @@
+.vscode/MongoDbNotes.readme
+.vscode/launch.json
+demomann-web-api-profile/bin/*
+demomann-web-api-profile/obj/*

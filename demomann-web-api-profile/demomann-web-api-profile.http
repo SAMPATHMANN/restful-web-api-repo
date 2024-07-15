@@ -1,0 +1,6 @@
+@demomann_web_api_profile_HostAddress = http://localhost:5257
+
+GET {{demomann_web_api_profile_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
