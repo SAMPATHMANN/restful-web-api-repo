@@ -1,13 +1,18 @@
 using System;
 using System.Linq.Expressions;
 using System.Net;
+using Demomann.common.Models;
 using DemomannWebApi.Profile.Services;
+using DemomannWebApi.Profile.Services.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using ServiceModels = DemomannWebApi.Profile.Services.Models;
 
 namespace DemomannWebApi.Profile.Controllers
 {
     [ApiController]
+    [Route("[controller]")]
+    // [EnableCors()]
     public class ProfileController : ControllerBase
     {
         private readonly ILogger<ProfileController> _logger;
@@ -17,11 +22,13 @@ namespace DemomannWebApi.Profile.Controllers
             _profileService = profileService;
         }
 
-        [HttpGet("getlist")]
-        public async Task<IActionResult> GetProfilesAsync()
+        [HttpGet("get")]
+        [ProducesResponseType<ProfileSearch>(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> GetProfilesAsync([FromQuery] ProfileSearch? profileSearch = null )
         {
             try {
-                var retVal = await _profileService.GetProfilesAsync();
+                var retVal = await _profileService.GetProfilesAsync(profileSearch);
                 return Ok(retVal);
             }
             catch(Exception ex)

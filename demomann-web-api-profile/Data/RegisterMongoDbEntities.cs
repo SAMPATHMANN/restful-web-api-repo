@@ -1,4 +1,4 @@
-using Demomann.common.lib.Helpers;
+using Demomann.common.Helpers;
 using DbModels = DemomannWebApi.Profile.Data.Models;
 
 namespace DemomannWebApi.Profile.Data.Extensions;

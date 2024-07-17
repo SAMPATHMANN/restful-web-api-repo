@@ -11,8 +11,11 @@ public class Profile{
     [BsonRepresentation(BsonType.ObjectId)]
     public string? Id { get; set; }
 
-    [BsonElement("name")]
-    public string? Name { get; set; } = null;
+    [BsonElement("first_name")]
+    public string? FirstName { get; set; } = null;
+
+    [BsonElement("last_name")]
+    public string? LastName { get; set; } = null;
 
     [BsonElement("email")]
     public string? Email {get; set;} = null;
