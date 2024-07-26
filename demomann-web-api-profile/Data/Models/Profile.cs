@@ -22,4 +22,7 @@ public class Profile{
     
     [BsonElement("password")]
     public string? Password  { get; set; }= null;
+
+    [BsonElement("phone")]
+    public string? Phone { get; internal set; }
 }
