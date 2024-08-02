@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\demomann-profile-web-api.props" />
+</Project>

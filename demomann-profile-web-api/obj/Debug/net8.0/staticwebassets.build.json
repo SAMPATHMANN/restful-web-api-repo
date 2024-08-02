@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "tKtUePDNicPv0zP23NrcIAQxrvAhFH/5Tgdy+4Wof3g=",
+  "Source": "demomann-profile-web-api",
+  "BasePath": "_content/demomann-profile-web-api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

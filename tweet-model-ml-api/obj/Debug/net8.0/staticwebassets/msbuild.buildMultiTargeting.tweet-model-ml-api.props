@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\tweet-model-ml-api.props" />
+</Project>
