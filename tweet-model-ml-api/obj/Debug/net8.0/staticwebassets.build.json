@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "s3uyoSItjyev4iKME7HBIloGxz2ZJ3X3EzLUSz6aHkY=",
+  "Source": "tweet-model-ml-api",
+  "BasePath": "_content/tweet-model-ml-api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
